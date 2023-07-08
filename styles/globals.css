@@ -8,19 +8,21 @@
   --shadow-light-color: #fff;
   --main-bg-color: #ecf0f3;
 
-  --box-shadow: 1rem 1rem 1rem var(var(--shadow-dark-color)),
-    -1rem -1rem 1rem var(var(--shadow-dark-color));
+  --box-shadow: 1rem 1rem 1rem var(--shadow-dark-color),
+    -1rem -1rem 1rem var(--shadow-light-color);
 
-  --box-shadow-2: 0rem 0rem 0rem var(var(--shadow-dark-color)),
-    -0.3rem -0.3rem 1rem var(var(--shadow-dark-color));
+  --box-shadow-2: 0rem 0rem 0rem var(--shadow-dark-color),
+    -0.3rem -0.3rem 1rem var(--shadow-dark-color);
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background-color: var(--main-bg-color);
+  color: var(--icons-color);
 }
 
 a {

@@ -11,23 +11,20 @@ import images from "../../../img";
 
 const Profile = () => {
   return (
-    <div>
-      <div className={Style.profile}>
-        <div className={Style.profile_account}>
-          <Image
-            src={images.user1}
-            alt="user profile"
-            width={50}
-            height={50}
-            className={Style.profile_account_img}
-          />
-          <div className={Style.profile_account_info}>
-            <p>Lionel Messi</p>
-            <small>X034634654375463....</small>
-          </div>
+    <div className={Style.profile}>
+      <div className={Style.profile_account}>
+        <Image
+          src={images.user1}
+          alt="user profile"
+          width={50}
+          height={50}
+          className={Style.profile_account_img}
+        />
+        <div className={Style.profile_account_info}>
+          <p>Lionel Messi</p>
+          <small>X034634654375463....</small>
         </div>
       </div>
-
       <div className={Style.profile_menu}>
         <div className={Style.profile_menu_one}>
           <div className={Style.profile_menu_one_item}>
