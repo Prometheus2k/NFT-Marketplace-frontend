@@ -73,8 +73,8 @@ const NavBar = () => {
   };
 
   return (
-    <div>
-      <div className={Style.navbar}>
+    <div className={Style.navbar}>
+      <div className={Style.navbar_container}>
         <div className={Style.navbar_container_left}>
           <div className={Style.logo}>
             <Image
@@ -151,6 +151,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
+
       {/*  SIDE BAR */}
       {openSideMenu && (
         <div className={Style.SideBar}>
