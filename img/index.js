@@ -44,9 +44,17 @@ import update from "./update.png";
 import earn from "./eran.png";
 import NFTVideo from "./nftvideo.png";
 import upload from "./upload.png";
+import provider1 from "./provider-1.png";
+import provider2 from "./provider-2.png";
+import provider3 from "./provider-3.png";
+import provider4 from "./provider-4.png";
 
 export default {
   upload,
+  provider1,
+  provider2,
+  provider3,
+  provider4,
   earn,
   collection,
   update,
