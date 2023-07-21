@@ -30,11 +30,11 @@ const SideBar = ({ setOpenSideMenu }) => {
     },
     {
       name: "Search",
-      link: "search",
+      link: "searchPage",
     },
     {
       name: "Author Profile",
-      link: "author-profile",
+      link: "author",
     },
     {
       name: "NFT Details",
@@ -42,11 +42,15 @@ const SideBar = ({ setOpenSideMenu }) => {
     },
     {
       name: "Account Setting",
-      link: "account-setting",
+      link: "account",
+    },
+    {
+      name: "Upload NFT",
+      link: "uploadNFT",
     },
     {
       name: "Connect Wallet",
-      link: "connect-wallet",
+      link: "connectWallet",
     },
     {
       name: "Blog",
@@ -59,19 +63,19 @@ const SideBar = ({ setOpenSideMenu }) => {
   const helpCenter = [
     {
       name: "About",
-      link: "about",
+      link: "aboutus",
     },
     {
       name: "Contact Us",
-      link: "contact-us",
+      link: "contactus",
     },
     {
       name: "Sign Up",
-      link: "sign-up",
+      link: "signUp",
     },
     {
       name: "Sign In",
-      link: "sign-in",
+      link: "login",
     },
     {
       name: "Subscription",
@@ -105,11 +109,12 @@ const SideBar = ({ setOpenSideMenu }) => {
         className={Style.sideBar_closeBtn}
         onClick={() => closeSideBar()}
       />
+
       <div className={Style.sideBar_box}>
         <Image src={images.logo} alt="logo" width={150} height={150} />
         <p>
-          Discover the most outstanding articles on all topics of NFT & Write
-          your own articles and share them.
+          Discover the most outstanding articles on all topices of NFT & write
+          your own stories and share them
         </p>
         <div className={Style.sideBar_social}>
           <a href="#">
@@ -137,8 +142,10 @@ const SideBar = ({ setOpenSideMenu }) => {
             onClick={() => openDiscoverMenu()}
           >
             <p>Discover</p>
-            <TiArrowSortedDown />
+            {!openDiscover && <TiArrowSortedDown />}
+            {openDiscover && <TiArrowSortedUp />}
           </div>
+
           {openDiscover && (
             <div className={Style.sideBar_discover}>
               {discover.map((el, i) => (
@@ -149,14 +156,17 @@ const SideBar = ({ setOpenSideMenu }) => {
             </div>
           )}
         </div>
+
         <div>
           <div
             className={Style.sideBar_menu_box}
             onClick={() => openHelpMenu()}
           >
             <p>Help Center</p>
-            <TiArrowSortedDown />
+            {!openHelp && <TiArrowSortedDown />}
+            {openHelp && <TiArrowSortedUp />}
           </div>
+
           {openHelp && (
             <div className={Style.sideBar_discover}>
               {helpCenter.map((el, i) => (

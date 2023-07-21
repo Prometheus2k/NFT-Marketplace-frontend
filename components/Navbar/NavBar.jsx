@@ -22,23 +22,25 @@ const NavBar = () => {
   const [profile, setProfile] = useState(false);
   const [openSideMenu, setOpenSideMenu] = useState(false);
 
-  const openMenu = (e) => {
-    const btnText = e.target.innerText;
-    if (btnText === "Discover") {
+  const openDiscover = () => {
+    if (!discover) {
       setDiscover(true);
       setHelp(false);
       setNotification(false);
       setProfile(false);
-    } else if (btnText === "Help Center") {
+    } else {
       setDiscover(false);
+    }
+  };
+
+  const openHelpCenter = () => {
+    if (!help) {
       setHelp(true);
+      setDiscover(false);
       setNotification(false);
       setProfile(false);
     } else {
-      setDiscover(false);
       setHelp(false);
-      setNotification(false);
-      setProfile(false);
     }
   };
 
@@ -95,7 +97,7 @@ const NavBar = () => {
         <div className={Style.navbar_container_right}>
           {/*  DISCOVER MENU */}
           <div className={Style.navbar_container_right_discover}>
-            <p onClick={(e) => openMenu(e)}>Discover</p>
+            <p onClick={() => openDiscover()}>Discover</p>
             {discover && (
               <div className={Style.navbar_container_right_discover_box}>
                 <Discover />
@@ -104,7 +106,7 @@ const NavBar = () => {
           </div>
           {/*  HELP CENTER MENU */}
           <div className={Style.navbar_container_right_help}>
-            <p onClick={(e) => openMenu(e)}>Help Center</p>
+            <p onClick={() => openHelpCenter()}>Help Center</p>
             {help && (
               <div className={Style.navbar_container_right_help_box}>
                 <HelpCenter />
