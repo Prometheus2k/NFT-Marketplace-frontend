@@ -76,7 +76,6 @@ const Slider = () => {
 
         <motion.div className={Style.slider_box_itmes} ref={dragSlider}>
           <motion.div
-            ref={dragSlider}
             className={Style.slider_box_item}
             drag="x"
             dragConstraints={{ right: 0, left: -width }}

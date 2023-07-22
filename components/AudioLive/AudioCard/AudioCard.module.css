@@ -52,16 +52,16 @@
   border-bottom-left-radius: 1rem;
 }
 
-.audioCard_box_like_time_remaing {
+.audioCard_box_like_time_remaining {
   transform: skewX(-35deg);
   text-align: center;
 }
 
-.audioCard_box_like_time_remaing small {
+.audioCard_box_like_time_remaining small {
   font-weight: 500;
 }
 
-.audioCard_box_like_time_remaing h5 {
+.audioCard_box_like_time_remaining h5 {
   font-size: 1.5rem;
   margin-top: 1.6rem;
 }
@@ -158,7 +158,7 @@
 }
 
 @media screen and (min-device-width: 427px) and (max-device-width: 768px) {
-  .audioCard_box_like_time_remaing h5 {
+  .audioCard_box_like_time_remaining h5 {
     font-size: 1rem;
   }
 }
@@ -168,7 +168,7 @@
     padding: 1rem 2rem;
   }
 
-  .audioCard_box_like_time_remaing h5 {
+  .audioCard_box_like_time_remaining h5 {
     font-size: 1rem;
   }
 

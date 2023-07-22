@@ -23,7 +23,7 @@ const SliderCard = ({ el, i }) => {
         <div className={Style.sliderCard_box_title}>
           <p>NFT Video #1245</p>
           <div className={Style.sliderCard_box_title_like}>
-            <small>1 0f 100</small>
+            <small>1 of 100</small>
           </div>
         </div>
 
@@ -34,7 +34,7 @@ const SliderCard = ({ el, i }) => {
           </div>
 
           <div className={Style.sliderCard_box_price_time}>
-            <small>Reaming time</small>
+            <small>Remaining time</small>
             <p>3h : 15m : 20s</p>
           </div>
         </div>
