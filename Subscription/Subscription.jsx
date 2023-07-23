@@ -16,12 +16,12 @@ const Subscription = ({ el, i }) => {
         <p className={Style.SubscriptionBox_box_price}>{el.price}</p>
 
         <div className={Style.SubscriptionBox_box_info}>
-          {el.service.map((el, i) => (
+          {el.service.map((ele, i) => (
             <p className={Style.SubscriptionBox_box_info_para} key={i + 1}>
               <span>
                 <TiTick />
               </span>
-              {el}
+              {ele}
             </p>
           ))}
         </div>

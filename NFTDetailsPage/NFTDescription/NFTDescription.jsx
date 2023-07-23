@@ -92,7 +92,7 @@ const NFTDescription = () => {
       setProvanance(false);
     } else {
       setOwner(false);
-      setHistory(true);
+      // setHistory(true);
     }
   };
 

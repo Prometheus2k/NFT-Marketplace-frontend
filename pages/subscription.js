@@ -44,7 +44,7 @@ const subscription = () => {
       <div className={Style.Subscription_box}>
         <div className={Style.Subscription_box_info}>
           <h1>💎 Subscription</h1>
-          <p>Pricing to fit the needs of any companie size.</p>
+          <p>Pricing to fit the needs of any company size.</p>
         </div>
 
         <div className={Style.Subscription_box_box}>

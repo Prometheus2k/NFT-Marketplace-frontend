@@ -41,7 +41,7 @@ const aboutus = () => {
     },
     {
       title: "220+",
-      info: "Countries and regions have our presence (as of Sept. 30, 2021",
+      info: "Countries and regions have our presence (as of Sept. 30, 2021)",
     },
   ];
   return (
