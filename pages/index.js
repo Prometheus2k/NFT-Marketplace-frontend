@@ -21,11 +21,12 @@ import {
 } from "../components/componentsindex";
 
 const Home = () => {
-  const { checkContract } = useContext(NFTMarketplaceContext);
+  const { checkifWalletIsConnected } = useContext(NFTMarketplaceContext);
 
-  useEffect(() => {
-    checkContract();
+  useState(() => {
+    checkifWalletIsConnected();
   }, []);
+
   return (
     <div className={Style.homePage}>
       <HeroSection />
